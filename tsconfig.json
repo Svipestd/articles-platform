@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/", // Место сборки
+    "noImplicitAny": true, // Не позволяет использовать переменные без типа
+    "module": "ESNext", // Тип импортов
+    "target": "es5", // Итог компиляции
+    "jsx": "react-jsx", // Поддержка React
+    "allowJs": true, // Дает компилятору поддержку js
+    "moduleResolution": "node", // Тип импорта
+    "allowSyntheticDefaultImports": true, // Необходим для поддержки es5 import из commonJS модулей
+    "esModuleInterop": true, // Необходим для поддержки дефолтного импорта из commonJS модулей
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  // Необходим для поддержки es5 imports
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["src/**/*", "config/jest/jestSetup.ts"]
+}

@@ -1,0 +1,10 @@
+{
+  "NAVBAR": {
+    "main": "Main page",
+    "about": "About site"
+  },
+  "title": "Main page",
+  "pageNotFound": "Page not found",
+  "defaultError": "Error is occurred",
+  "reloadPage": "Reload page"
+}
