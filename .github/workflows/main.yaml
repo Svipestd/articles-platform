@@ -5,12 +5,11 @@ on:
   pull_request:
     branches: [master]
 jobs:
-  Pipeline:
+  Test-build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [22.x]
-
     steps:
       - uses: actions/checkout@v4
       - name: Starting Node.js ${{ matrix.node-version }}

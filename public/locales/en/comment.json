@@ -1,0 +1,11 @@
+{
+  "COMMENT": {
+    "TEXTS": {
+      "commentList": "Comments",
+      "noComments": "Comments not found"
+    },
+    "PLACEHOLDERS": {
+      "text": "Enter your comment"
+    }
+  }
+}

@@ -1,18 +1,15 @@
-import { FC } from 'react'
+import { Page } from '@/shared/ui/Page/Page';
+import { FC, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 interface AboutPageProps {
-  className?: string
+  className?: string;
 }
 
-const AboutPage: FC<AboutPageProps> = () => {
-  const { t } = useTranslation('about')
+const AboutPage: FC<AboutPageProps> = memo(() => {
+  const { t } = useTranslation('about');
 
-  return (
-    <div>
-      {t('title')}
-    </div>
-  );
-};
+  return <Page>{t('title')}</Page>;
+});
 
-export default AboutPage
+export default AboutPage;

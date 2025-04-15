@@ -1,18 +1,20 @@
-import { FC } from 'react'
+import { FC, memo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Text } from '@/shared/ui/Text/Text';
+import { Page } from '@/shared/ui/Page/Page';
 
 interface MainPageProps {
-  className?: string
+  className?: string;
 }
 
-const MainPage: FC<MainPageProps> = () => {
-  const { t } = useTranslation()
+const MainPage: FC<MainPageProps> = memo(() => {
+  const { t } = useTranslation();
 
   return (
-    <div>
-      {t('title')}
-    </div>
+    <Page>
+      <Text text={t('SIDEBAR.ITEMS.main')}></Text>
+    </Page>
   );
-};
+});
 
-export default MainPage
+export default MainPage;

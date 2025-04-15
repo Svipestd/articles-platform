@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonVariant } from './Button';
 
 describe('Button', () => {
   test('Test render', () => {
@@ -7,8 +7,8 @@ describe('Button', () => {
     expect(screen.getByTestId('button')).toBeInTheDocument();
   });
 
-  test('Test clear theme', () => {
-    render(<Button theme={ThemeButton.CLEAR}></Button>);
+  test('Test text theme', () => {
+    render(<Button variant={ButtonVariant.TEXT}></Button>);
     expect(screen.getByTestId('button')).toHaveClass('clear');
   });
 });

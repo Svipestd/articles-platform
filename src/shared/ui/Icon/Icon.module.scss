@@ -1,0 +1,38 @@
+.Icon {
+  display: block;
+}
+
+.size-s {
+  height: 16px;
+  width: 16px;
+}
+
+.size-m {
+  height: 24px;
+  width: 24px;
+}
+
+.size-l {
+  height: 32px;
+  width: 32px;
+}
+
+.primary {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+
+.secondary {
+  fill: var(--color-secondary);
+  stroke: var(--color-secondary);
+}
+
+.secondary-inverted {
+  fill: var(--color-secondary-inverted);
+  stroke: var(--color-secondary-inverted);
+}
+
+.faded {
+  fill: var(--color-faded);
+  stroke: var(--color-faded);
+}

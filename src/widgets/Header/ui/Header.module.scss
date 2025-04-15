@@ -1,0 +1,24 @@
+.Header {
+  width: 100%;
+  height: var(--height-header);
+  background: var(--color-bg);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid var(--color-faded-extra);
+}
+
+.switchers {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 24px;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}

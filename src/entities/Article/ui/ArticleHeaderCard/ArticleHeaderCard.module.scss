@@ -1,0 +1,25 @@
+.ArticleHeaderCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  // width: 90%;
+  margin-bottom: 4px;
+}
+
+.info-container {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+}
+
+.tags-container {
+  display: flex;
+  gap: 4px;
+}

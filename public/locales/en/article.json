@@ -1,0 +1,10 @@
+{
+  "ARTICLE": {
+    "ACTIONS": {
+      "readMore": "Read more"
+    },
+    "TEXTS": {
+      "noArticles": "No articles found"
+    }
+  }
+}

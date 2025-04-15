@@ -1,21 +1,28 @@
-import { FC, Suspense } from 'react';
+import { FC, memo, Suspense, useCallback } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { routeConfig } from '@/shared/config/routeConfig/routeConfig';
-import { PageLoader } from '@/widgets/PageLoader/ui/PageLoader';
+import { AppRoutesProps, routeConfig } from '@/app/providers/Router/config/routeConfig';
+import { PageLoader } from '@/shared/ui/PageLoader/ui/PageLoader';
+import { RequireAuth } from './RequireAuth';
 
 interface AppRouterProps {
   className?: string;
   children?: React.ReactNode;
 }
 
-export const AppRouter: FC<AppRouterProps> = () => {
+export const AppRouter: FC<AppRouterProps> = memo(() => {
+  const renderWithWrapper = useCallback((route: AppRoutesProps) => {
+    return (
+      <Route
+        key={route.path}
+        path={route.path}
+        element={route.authOnly ? <RequireAuth>{route.element}</RequireAuth> : route.element}
+      />
+    );
+  }, []);
+
   return (
     <Suspense fallback={<PageLoader />}>
-      <Routes>
-        {Object.values(routeConfig).map(({ path, element }) => (
-          <Route key={path} path={path} element={element} />
-        ))}
-      </Routes>
+      <Routes>{Object.values(routeConfig).map(renderWithWrapper)}</Routes>
     </Suspense>
   );
-};
+});

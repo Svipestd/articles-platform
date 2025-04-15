@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { AppLink, AppLinkTheme } from './AppLink';
+import { AppLink, AppLinkColor } from './AppLink';
 
 const meta = {
   title: 'shared/AppLink',
@@ -16,20 +16,13 @@ type Story = StoryObj<typeof AppLink>;
 export const Primary: Story = {
   args: {
     children: 'Link',
-    theme: AppLinkTheme.PRIMARY,
+    color: AppLinkColor.PRIMARY,
   },
 };
 
 export const Secondary: Story = {
   args: {
     children: 'Link',
-    theme: AppLinkTheme.SECONDARY,
-  },
-};
-
-export const Danger: Story = {
-  args: {
-    children: 'Link',
-    theme: AppLinkTheme.DANGER,
+    color: AppLinkColor.SECONDARY,
   },
 };

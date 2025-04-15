@@ -1,0 +1,55 @@
+.Checkbox {
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all var(--transition-time-default);
+  cursor: pointer;
+
+  &:hover,
+  &:focus-within {
+    border-color: var(--color-primary);
+  }
+
+  .Checkbox.size-m & {
+    width: 16px;
+    height: 16px;
+  }
+
+  .Checkbox.size-l & {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Checkbox.error & {
+    border-color: var(--color-error);
+  }
+
+  input {
+    height: 22px;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    background-color: var(--color-white);
+    color: var(--color-bg-inverted);
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    .Checkbox.disabled & {
+      opacity: var(--opacity-disabled);
+    }
+
+    .Checkbox.size-m & {
+      font: var(--font-m);
+    }
+
+    .Checkbox.size-l & {
+      font: var(--font-l);
+    }
+  }
+}

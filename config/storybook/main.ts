@@ -3,6 +3,8 @@ import path from 'path';
 import { buildCssLoaders } from '../build/loaders/buildCssLoaders';
 import { buildSvgLoaders } from '../build/loaders/buildSvgLoaders';
 import CopyPlugin from 'copy-webpack-plugin';
+import webpack from 'webpack';
+import { BuildProject } from '../build/types/config';
 
 const config: StorybookConfig = {
   stories: ['../../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -39,8 +41,6 @@ const config: StorybookConfig = {
     disableTelemetry: true,
   },
   webpackFinal: async (config) => {
-    console.log(config.output?.path);
-
     // Add alias support
     config.resolve!.extensions = ['.tsx', '.ts', '.js'];
     config.resolve!.alias = {
@@ -68,6 +68,15 @@ const config: StorybookConfig = {
             to: path.resolve(config.output!.path!, 'locales'),
           },
         ],
+      })
+    );
+
+    // Add env variables
+    config.plugins!.push(
+      new webpack.DefinePlugin({
+        __IS_DEV__: true,
+        __API__: JSON.stringify(''),
+        __PROJECT__: JSON.stringify(BuildProject.STORYBOOK),
       })
     );
 

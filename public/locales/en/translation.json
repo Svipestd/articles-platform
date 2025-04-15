@@ -1,10 +1,63 @@
 {
-  "NAVBAR": {
-    "main": "Main page",
-    "about": "About site"
+  "GENERAL": {
+    "TEXTS": {
+      "notSpecified": "Not specified",
+      "notChosen": "Not chosen"
+    },
+    "FIELDS": {
+      "email": "Email",
+      "country": "Country",
+      "currency": "Currency"
+    },
+    "ERRORS": {
+      "defaultError": "Something went wrong...",
+      "pageNotFound": "Page not found",
+      "required": "Required"
+    },
+    "ACTIONS": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "create": "Create",
+      "edit": "Edit",
+      "delete": "Delete",
+      "reloadPage": "Reload page"
+    },
+    "PLACEHOLDERS": {
+      "search": "Search...",
+      "sort": "Sort..."
+    },
+    "SORT": {
+      "best": "Best",
+      "new": "New"
+    }
   },
-  "title": "Main page",
-  "pageNotFound": "Page not found",
-  "defaultError": "Error is occurred",
-  "reloadPage": "Reload page"
+  "HEADER": {
+    "ACTIONS": {
+      "login": "Login",
+      "logout": "Logout"
+    }
+  },
+  "SIDEBAR": {
+    "ITEMS": {
+      "main": "Main page",
+      "about": "About site",
+      "profile": "Profile",
+      "articles": "Acrticles"
+    }
+  },
+  "LOGIN": {
+    "TEXTS": {
+      "title": "Login form"
+    },
+    "FIELDS": {
+      "username": "Username",
+      "password": "Password"
+    },
+    "ERRORS": {
+      "invalidCredential": "Invalid login or password"
+    },
+    "ACTIONS": {
+      "login": "Login"
+    }
+  }
 }

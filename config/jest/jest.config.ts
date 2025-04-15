@@ -1,7 +1,13 @@
 import type { Config } from 'jest';
 import path from 'path';
+import { BuildProject } from '../build/types/config';
 
 const config: Config = {
+  globals: {
+    __IS_DEV__: true,
+    __API__: '',
+    __PROJECT__: BuildProject.JEST,
+  },
   testEnvironment: 'jsdom',
   clearMocks: true,
   coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],

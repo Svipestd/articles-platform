@@ -1,0 +1,23 @@
+.SkeletonSection {
+}
+
+.user-avatar-container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-container {
+  flex-grow: 0;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  margin-left: 16px;
+}
+
+.username {
+  display: flex;
+  gap: 4px;
+}

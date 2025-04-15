@@ -1,0 +1,13 @@
+{
+  "PROFILE": {
+    "FIELDS": {
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "birthDate": "Дата рождения",
+      "city": "Город"
+    },
+    "ERRORS": {
+      "userNotFound": "Пользователь не найден"
+    }
+  }
+}

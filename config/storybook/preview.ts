@@ -1,14 +1,15 @@
-import type { Preview } from '@storybook/react';
-import {
-  ThemeDecorator,
-  themeGlobalType,
-} from './../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { StyleDecorator } from './../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
-import { RouterDecorator } from './../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
+import { StoreDecorator } from './../../src/shared/lib/storybook/StoreDecorator/StoreDecorator';
 import {
   I18nDecorator,
   localeGlobalType,
-} from './../../src/shared/config/storybook/I18nDecorator/I18nDecorator';
+} from './../../src/shared/lib/storybook/I18nDecorator/I18nDecorator';
+import { RouterDecorator } from './../../src/shared/lib/storybook/RouterDecorator/RouterDecorator';
+import {
+  ThemeDecorator,
+  themeGlobalType,
+} from './../../src/shared/lib/storybook/ThemeDecorator/ThemeDecorator';
+import { StyleDecorator } from './../../src/shared/lib/storybook/StyleDecorator/StyleDecorator';
+import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
   parameters: {
@@ -23,7 +24,7 @@ const preview: Preview = {
     theme: themeGlobalType,
     locale: localeGlobalType,
   },
-  decorators: [StyleDecorator, ThemeDecorator(), RouterDecorator, I18nDecorator],
+  decorators: [StyleDecorator, ThemeDecorator(), I18nDecorator, RouterDecorator],
 };
 
 export default preview;

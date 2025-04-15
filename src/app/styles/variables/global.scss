@@ -1,14 +1,67 @@
 :root {
+  // Fonts
   --font-family-main: 'Roboto', 'Times New Roman';
+  --font-size-s: 12px;
+  --font-line-s: 20px;
+  --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
   --font-size-m: 16px;
   --font-line-m: 24px;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-  --font-size-l: 24px;
-  --font-line-l: 32px;
+  --font-size-l: 20px;
+  --font-line-l: 28px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
-  --navbar-height: 50px;
-  --sidebar-width: 300px;
-  --sidebar-width-collapsed: 80px;
+  --font-size-xl: 24px;
+  --font-line-xl: 32px;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+  --font-size-xxl: 32px;
+  --font-line-xxl: 40px;
+  --font-xxl: var(--font-size-xxl) / var(--font-line-xxl) var(--font-family-main);
 
-  --danger-color: #f00;
+  // Sizes
+  --height-header: 50px;
+  --width-sidebar: 300px;
+  --width-sidebar-collapsed: 80px;
+  --width-page-container: 864px;
+
+  // Colors
+  --color-error: #f00;
+  --color-overlay: rgb(0 0 0 / 60%);
+  --color-white: #fff;
+
+  // Z-indexes
+  --z-index-modal: 10;
+
+  // Border-radiuses
+  --border-radius-default: 6px;
+
+  // Transitions
+  --transition-time-default: 0.2s;
+
+  // Box shadow
+  --box-shadow-default: #0000003d 0 3px 8px;
+
+  // Opacity
+  --opacity-hover: 0.8;
+  --opacity-disabled: 0.6;
+
+  // Padding
+  --padding-default: 24px;
+
+  // Margin
+  --margin-default: 24px;
+  --margin-1: 4px;
+  --margin-2: 8px;
+  --margin-3: 12px;
+  --margin-4: 16px;
+  --margin-5: 20px;
+  --margin-6: 24px;
+
+  // Gap
+  --gap-default: 24px;
+  --gap-1: 4px;
+  --gap-2: 8px;
+  --gap-3: 12px;
+  --gap-4: 16px;
+  --gap-5: 20px;
+  --gap-6: 24px;
 }

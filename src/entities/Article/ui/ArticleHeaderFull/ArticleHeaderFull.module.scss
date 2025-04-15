@@ -1,0 +1,26 @@
+.ArticleHeaderFull {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+}
+
+.info-container {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.statistic-container {
+  display: flex;
+  gap: 12px;
+}
+
+.statistic-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

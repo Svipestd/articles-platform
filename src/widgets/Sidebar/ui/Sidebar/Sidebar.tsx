@@ -1,35 +1,28 @@
-import { FC, useState } from 'react';
+import { FC, memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Sidebar.module.scss';
-import { ThemeSwitcher } from '@/widgets/ThemeSwitcher';
-import { LanguageSwitcher } from '@/widgets/LanguageSwitcher';
-import { Button } from '@/shared/ui/Button/Button';
+import { SidebarItem } from '../SidebarItem/SidebarItem';
+import { useSelector } from 'react-redux';
+import { selectSidebarItems } from '../../model/selectors/selectSidebarItems/selectSidebarItems';
+import { VStack } from '@/shared/ui/Stack';
 
 interface SidebarProps {
   className?: string;
   children?: React.ReactNode;
 }
 
-export const Sidebar: FC<SidebarProps> = (props) => {
-  const { className } = props;
+export const Sidebar: FC<SidebarProps> = memo((props) => {
+  const { className = '' } = props;
 
-  const [collapsed, setCollapsed] = useState(false);
-
-  const onToggle = () => {
-    setCollapsed((prev) => !prev);
-  };
+  const SidebarItemsList = useSelector(selectSidebarItems);
 
   return (
-    <div
-      data-testid="sidebar"
-      className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
-    >
-      <Button data-testid="sidebar-toggle" onClick={onToggle}></Button>
-
-      <div className={cls.switchers}>
-        <ThemeSwitcher />
-        <LanguageSwitcher />
-      </div>
-    </div>
+    <aside data-testid="sidebar" className={classNames(cls.Sidebar, {}, [className])}>
+      <VStack className={cls.items} gap="4" role="navigation">
+        {SidebarItemsList.map((item) => (
+          <SidebarItem key={item.path} item={item} collapsed={false} />
+        ))}
+      </VStack>
+    </aside>
   );
-};
+});

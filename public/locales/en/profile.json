@@ -1,0 +1,13 @@
+{
+  "PROFILE": {
+    "FIELDS": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "birthDate": "Birth date",
+      "city": "City"
+    },
+    "ERRORS": {
+      "userNotFound": "User not found"
+    }
+  }
+}

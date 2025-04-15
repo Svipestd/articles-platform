@@ -1,13 +1,12 @@
 .Sidebar {
-  height: calc(100vh - var(--navbar-height));
-  width: var(--sidebar-width);
-  background: var(--inverted-bg-color);
-  position: relative;
-  transition: width 0.3s;
-}
-
-.collapsed {
-  width: var(--sidebar-width-collapsed);
+  height: calc(100vh - var(--height-header));
+  min-width: var(--width-sidebar);
+  max-width: var(--width-sidebar);
+  position: sticky;
+  top: var(--height-header);
+  transition: min-width 0.3s;
+  background: var(--color-bg);
+  border-right: 1px solid var(--color-faded-extra);
 }
 
 .switchers {
@@ -16,4 +15,20 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.collapseBtn {
+  position: absolute;
+  right: -32px;
+  bottom: 32px;
+}
+
+.items {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.collapsed {
+  min-width: var(--width-sidebar-collapsed);
+  max-width: var(--width-sidebar-collapsed);
 }

@@ -1,0 +1,15 @@
+.ProfileEditForm {
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.actions-container {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}

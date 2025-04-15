@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonVariant } from './Button';
 
 const meta: Meta<typeof Button> = {
   title: 'shared/Button',
@@ -13,20 +13,26 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     children: 'Text',
-    theme: ThemeButton.PRIMARY,
   },
 };
 
-export const Clear: Story = {
+export const Disabled: Story = {
   args: {
     children: 'Text',
-    theme: ThemeButton.CLEAR,
+    disabled: true,
+  },
+};
+
+export const Text: Story = {
+  args: {
+    children: 'Text',
+    variant: ButtonVariant.TEXT,
   },
 };
 
 export const Outline: Story = {
   args: {
     children: 'Text',
-    theme: ThemeButton.OUTLINE,
+    variant: ButtonVariant.OUTLINE,
   },
 };

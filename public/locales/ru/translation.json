@@ -1,10 +1,63 @@
 {
-  "NAVBAR": {
-    "main": "Главная страница",
-    "about": "О сайте"
+  "GENERAL": {
+    "TEXTS": {
+      "notSpecified": "Не указано",
+      "notChosen": "Не выбрано"
+    },
+    "FIELDS": {
+      "email": "Email",
+      "country": "Страна",
+      "currency": "Валюта"
+    },
+    "ERRORS": {
+      "defaultError": "Что-то пошло не так...",
+      "pageNotFound": "Страница не найдена",
+      "required": "Обязательное поле"
+    },
+    "ACTIONS": {
+      "cancel": "Отмена",
+      "save": "Сохранить",
+      "create": "Создать",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "reloadPage": "Перезагрузить страницу"
+    },
+    "PLACEHOLDERS": {
+      "search": "Поиск...",
+      "sort": "Сортировать..."
+    },
+    "SORT": {
+      "best": "Лучшее",
+      "new": "Новое"
+    }
   },
-  "title": "Главная страница",
-  "pageNotFound": "Страница не найдена",
-  "defaultError": "Произошла ошибка",
-  "reloadPage": "Перезагрузить страницу"
+  "HEADER": {
+    "ACTIONS": {
+      "login": "Войти",
+      "logout": "Выйти"
+    }
+  },
+  "SIDEBAR": {
+    "ITEMS": {
+      "main": "Главная страница",
+      "about": "О сайте",
+      "profile": "Профиль",
+      "articles": "Статьи"
+    }
+  },
+  "LOGIN": {
+    "TEXTS": {
+      "title": "Форма входа"
+    },
+    "FIELDS": {
+      "username": "Имя пользователя",
+      "password": "Пароль"
+    },
+    "ERRORS": {
+      "invalidCredential": "Неправильный логин или пароль"
+    },
+    "ACTIONS": {
+      "login": "Войти"
+    }
+  }
 }

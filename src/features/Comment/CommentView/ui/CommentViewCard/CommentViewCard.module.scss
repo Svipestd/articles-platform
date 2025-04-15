@@ -1,0 +1,19 @@
+.CommentViewCard {
+  margin: 12px 0;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-text {
+}
+
+.comment-actions {
+}
+
+.comment-action-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

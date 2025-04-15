@@ -1,0 +1,19 @@
+.Divider {
+  margin: var(--margin-default) 0;
+}
+
+.size-s {
+  margin: calc(var(--margin-default) / 2) 0;
+}
+
+.size-m {
+  margin: var(--margin-default) 0;
+}
+
+.size-l {
+  margin: calc(var(--margin-default) * 2) 0;
+}
+
+.isLine {
+  border-top: 1px solid var(--color-faded-extra);
+}

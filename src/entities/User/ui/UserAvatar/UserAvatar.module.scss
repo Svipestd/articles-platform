@@ -1,0 +1,23 @@
+.UserAvatar {
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-container {
+  flex-grow: 0;
+}
+
+.data-container {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+.username {
+  display: flex;
+  gap: 4px;
+}

@@ -1,0 +1,11 @@
+{
+  "COMMENT": {
+    "TEXTS": {
+      "commentList": "Комментарии",
+      "noComments": "Комментарии отсутствуют"
+    },
+    "PLACEHOLDERS": {
+      "text": "Введите ваш комментарий"
+    }
+  }
+}

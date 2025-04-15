@@ -1,0 +1,24 @@
+.ArticleViewCard {
+  width: 250px;
+  transition: var(--transition-time-default);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  width: 100%;
+}
+
+.card-image {
+  height: 200px;
+  max-height: 200px;
+  margin-bottom: 4px;
+}
