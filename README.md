@@ -1,4 +1,4 @@
-# React Template
+# Articles Platform
 
 A production-ready React boilerplate built with **Feature-Sliced Design (FSD)** architecture, custom Webpack 5 configuration, TypeScript, and a full testing setup including unit, integration, and visual regression tests.
 
